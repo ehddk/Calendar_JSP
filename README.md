@@ -25,7 +25,8 @@
 변수가 전역으로 선언되지 않기때문에! 메모리 관리에도 효율적이다.
 
 
---git commit 시 발생 --
+
+#git commit 시 발생
 
 1] new respority에 add y.html 하니까 다음과 같은 오류 나옴...
 fatal: pathspec 'v.js' did not match any files
