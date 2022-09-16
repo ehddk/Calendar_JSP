@@ -1,4 +1,32 @@
+(function () {
+  var prev = document.getElementById("prev"),
+    next = document.getElementById("next"),
+    year = new Date().getFullYear(),
+    month = new Date().getMonth() + 1;
+
+  calendar(year, month);
+
+  prev.onclick = function () {
+    calendar(year, --month);
+    console.log(month);
+  };
+  next.onclick = function () {
+    calendar(year, ++month);
+    console.log(month);
+  };
+})();
+
+//코드 영역을 분리하기 위해 바깥쪽에서 익명함수로 감싼 것임.
+
+꼭 이렇게 할 필요는 없지만 ? 
+자바스크립트에는 c언어랑 달리 main 함수가 따로 없기 때문에 이렇게 함수로 정의해놓으면
+변수가 전역으로 선언되지 않기때문에! 메모리 관리에도 효율적이다.
+
+
+
+
 # Calendar_JSP
+--git commit 시 
 
 1] new respority에 add y.html 하니까 다음과 같은 오류 나옴...
 fatal: pathspec 'v.js' did not match any files
